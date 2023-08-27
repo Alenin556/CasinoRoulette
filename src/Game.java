@@ -47,12 +47,10 @@ public class Game {
                             win = cash * 2;
                             System.out.println("Ваш выигрыш =" + win + " руб.");
                             wallet = wallet + win;
-                            System.out.println("В вашем кошельке:" + wallet + " руб.");
                         } else {
                             System.out.println("Вы проиграли, попробуйте еще раз! =)");
                             win = 0;
                             System.out.println("Ваш выигрыш =" + win + " руб.");
-                            System.out.println("В вашем кошельке:" + wallet + " руб.");
                         }
                         break;
                     case 2:
@@ -61,10 +59,12 @@ public class Game {
                         break;
                 }
             }
+            System.out.println("В вашем кошельке:" + wallet + " руб.");
             System.out.println("Вы не можете принять участи в рулетке. =(");
             System.out.println("Берите с собой больше денег в следующий раз! =)");
             System.out.println("До свиданья!");
         } else {
+            System.out.println("В вашем кошельке:" + wallet + " руб.");
             System.out.println("Вы не можете принять участи в рулетке. =(");
             System.out.println("Берите с собой больше денег в следующий раз! =)");
             System.out.println("До свиданья!");
